@@ -38,14 +38,14 @@
   become:                  true
   roles:
     - roles/installation-manager-install
-    - roles/was-nd-install
-    - roles/was-nd-fix-install
-    - roles/was-java-install
+   # - roles/was-nd-install
+   # - roles/was-nd-fix-install
+   # - roles/was-java-install
 
-- name:                    Install HTTP Servers
-  hosts:                   ihs_servers
-  become:                  true
-  roles:
+#- name:                    Install HTTP Servers
+#  hosts:                   ihs_servers
+#  become:                  true
+#  roles:
     - roles/installation-manager-install
     - roles/ibm-http-server-install
     - roles/ibm-http-server-fix-install
@@ -53,10 +53,10 @@
     - roles/ibm-http-adminctl-restart
     - roles/ibm-http-server-restart
 
-- name:                    Setup DMGR
-  hosts:                   dmgr
-  become:                  true
-  roles:
+#- name:                    Setup DMGR
+# hosts:                   dmgr
+#  become:                  true
+#  roles:
     - roles/was-dmgr-create-profile
     - roles/was-dmgr-start
     - roles/was-dmgr-import-tls-cert
@@ -64,16 +64,16 @@
     - roles/was-dmgr-config-jvm
     - roles/was-dmgr-restart
 
-- name:                    Setup WAS Nodes
-  hosts:                   was_servers
-  serial:                  1
-  become:                  true
-  roles:
+#- name:                    Setup WAS Nodes
+#  hosts:                   was_servers
+ # serial:                  1
+  #become:                  true
+  #roles:
     - roles/was-profile-create
     - roles/was-nodeagent-start
 
-- name:                    Setup HTTP Servers on DMGR
-  hosts:                   dmgr
-  become:                  true
-  roles:
-    - roles/was-dmgr-config-webserver
+#- name:                    Setup HTTP Servers on DMGR
+ # hosts:                   dmgr
+  #become:                  true
+  #roles:
+   # - roles/was-dmgr-config-webserver
