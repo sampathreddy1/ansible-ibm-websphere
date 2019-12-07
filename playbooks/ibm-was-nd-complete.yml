@@ -40,7 +40,7 @@
   become: yes
   roles:
     - roles/installation-manager-install
-   # - roles/was-nd-install
+    - roles/was-nd-install
    # - roles/was-nd-fix-install
    # - roles/was-java-install
 
