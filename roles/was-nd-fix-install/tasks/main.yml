@@ -7,4 +7,4 @@
 
 - name:          Install WebSphere Application Server - Fixes
   include_tasks: install_was_fixes.yml
-  when:          version_already_installed.rc != 0
+ # when:          version_already_installed.rc != 0
