@@ -1,7 +1,7 @@
 ---
-- name:          Cleanup Binaries directory
-  file:          path={{ __tmp_dir }} state=absent
-  ignore_errors: true
+#- name:          Cleanup Binaries directory
+#  file:          path={{ __tmp_dir }} state=absent
+#  ignore_errors: true
 
 #-  debug:       var=version_already_installed
 - name:          Create Binaries directory
