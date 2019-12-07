@@ -11,9 +11,9 @@ __tpl_file:             "was_nd_fixes.rsp.j2"
 
 __was_fp_version_latest:  "8.5.5015.20190128_1828"
 __was_fp_files_latest:
-  - { file_name: 8.5.5-WS-WAS-FP015-part1.zip, check_sum: 1449ad29cd12b320838569e4b25654f38ce8dc189aa6a58aa38c67cf46276855 }
-  - { file_name: 8.5.5-WS-WAS-FP015-part2.zip, check_sum: dd2e04dfdecd5269aab8ab1d7330f248d376ab996290bd39ad28029f5c5755b5 }
-  - { file_name: 8.5.5-WS-WAS-FP015-part3.zip, check_sum: 3376fc6ee2e9c320cd99803fa87611424ab4316542bf4fddab60e805e4dd323a }
+  - { file_name: 8.5.5-WS-WAS-FP0000007-part1.zip }
+  - { file_name: 8.5.5-WS-WAS-FP0000007-part2.zip }
+  
 
 __this_version:         "{{ was_fp_version | default( __was_fp_version_latest ) }}"
 __this_files:           "{{ was_fp_files | default( __was_fp_files_latest ) }}"
