@@ -1,9 +1,9 @@
 ---
-- name:          Check Vars
-  include_tasks: check_vars.yml
+#- name:          Check Vars
+#  include_tasks: check_vars.yml
 
-- name:          Define Vars
-  include_tasks: define_vars.yml
+#- name:          Define Vars
+#  include_tasks: define_vars.yml
 
 - name:          Install WebSphere Application Server
   include_tasks: install_was.yml
