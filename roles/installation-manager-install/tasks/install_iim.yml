@@ -4,13 +4,17 @@
 
 - name:          Create Logs directory
   file:          path={{ __logs_dir }} state=directory mode=0755
+- name:          copy installation files
+  copy:
+    src: /home/wasadmin/agent.installer.linux.gtk.x86_64_1.8.9001.20180709_1302.zip
+    dest: /opt/IBM/Binaries/iim
 
-- name:          Download IBM Installation Manager
-  get_url:
-    url:         "{{ iim_repository_url }}/{{ __bin_file }}"
-    dest:        "{{ __tmp_dir }}/{{ __bin_file }}"
-    mode:        0755
-    checksum:    sha256:{{ __bin_file_sha256 }}
+#- name:          Download IBM Installation Manager
+  #get_url:
+   # url:         "{{ iim_repository_url }}/{{ __bin_file }}"
+   # dest:        "{{ __tmp_dir }}/{{ __bin_file }}"
+   # mode:        0755
+   # checksum:    sha256:{{ __bin_file_sha256 }}
 
 - name:          Extract IBM Installation Manager
   unarchive:
