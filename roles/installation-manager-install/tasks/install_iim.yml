@@ -5,9 +5,7 @@
 - name:          Create Logs directory
   file:          path={{ __logs_dir }} state=directory mode=0755
 - name:          copy installation files
-  copy:
-    src: /home/wasadmin/agent.installer.linux.gtk.x86_64_1.8.9001.20180709_1302.zip
-    dest: /opt/IBM/Binaries/iim
+  copy:          src: /home/wasadmin/agent.installer.linux.gtk.x86_64_1.8.9001.20180709_1302.zip dest: /opt/IBM/Binaries/iim
 
 #- name:          Download IBM Installation Manager
   #get_url:
