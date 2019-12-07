@@ -33,7 +33,7 @@
   #  - { file_name: 8.0.2.10-WS-IBMWASJAVA-Linux.zip, check_sum: 7338d90d760596d95eb9622aa6a5ceb21c5604cece702abeeb8565c331f2aaa1 }
 ---
 - name:                    Install WebSphere Application Server - Network Deployment
-  hosts:                   dmgr #was_servers
+  hosts:                   wasadmin #was_servers
   #  serial:                  2
   #become:                  true
   become_user: root
