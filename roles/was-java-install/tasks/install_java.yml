@@ -49,7 +49,7 @@
     {{ __iim_install_location }}/eclipse/tools/imcl -acceptLicense -sVP -log {{ __log_file }} input {{ __rsp_file }}
   register:      cout
   changed_when:  ( cout.stdout.find(__version_check) != -1)
-  when:          version_already_installed.rc != 0
+  #when:          version_already_installed.rc != 0
 
 #- debug:        var=cout
 
