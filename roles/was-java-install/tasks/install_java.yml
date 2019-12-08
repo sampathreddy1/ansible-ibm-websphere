@@ -1,8 +1,8 @@
 ---
-- name:          Cleanup Binaries directory
-  file:          path={{ __tmp_dir }} state=absent
+#- name:          Cleanup Binaries directory
+#  file:          path={{ __tmp_dir }} state=absent
   #when:          version_already_installed.rc != 0
-  ignore_errors: true
+ # ignore_errors: true
 
 - name:          Create Binaries directory
   file:          path={{ __tmp_dir }} state=directory mode=0755
