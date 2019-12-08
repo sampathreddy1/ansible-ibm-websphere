@@ -41,8 +41,8 @@
   roles:
     #- roles/installation-manager-install
     #- roles/was-nd-install
-    - roles/was-nd-fix-install
-    #- roles/was-java-install
+    #- roles/was-nd-fix-install
+    -  roles/was-java-install
 
 #- name:                    Install HTTP Servers
 #  hosts:                   ihs_servers
