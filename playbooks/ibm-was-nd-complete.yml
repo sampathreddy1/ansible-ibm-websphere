@@ -60,7 +60,7 @@
 #  become:                  true
 #  roles:
      - roles/was-dmgr-create-profile
-    #- roles/was-dmgr-start
+     - roles/was-dmgr-start
     #- roles/was-dmgr-import-tls-cert
     #- roles/was-dmgr-config-ldap
     #- roles/was-dmgr-config-jvm
